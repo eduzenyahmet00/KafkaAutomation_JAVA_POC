@@ -61,10 +61,14 @@ public class GetMessageFromKafkaTopic {
 //		// Poll for messages
         boolean flag = true;
         while(flag) {
+            String actualMsg = "Hey Austin Team";
             ConsumerRecords<String,String> records = consumer.poll(100); // Return N number of records
             for(ConsumerRecord<String,String> each:records) {
                 String msg = each.value();
                 System.out.println("Latest message from topic :" + msg);
+                if (msg.equals(actualMsg)){
+                    System.out.println("Test:PASSED!");
+                }
                 long offSet = each.offset();
                 System.out.println("Offset value :" + offSet);
 
