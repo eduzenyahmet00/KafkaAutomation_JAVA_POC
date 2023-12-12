@@ -47,7 +47,7 @@ public class SendMessageToTopic {
          //ProducerRecord<String,String> record = new ProducerRecord<String, String>(topic2, "key", "value");
          //CASE-1
          //ProducerRecord<String, String> message = new ProducerRecord<String, String>(topic, "Message-" + i, "Hey Neva-Eureka QA Team");
-         ProducerRecord<String, String> message = new ProducerRecord<String, String>(topic, "austin", "Hey Austin Team");
+         ProducerRecord<String, String> message = new ProducerRecord<>(topic, "austin", "Hey Austin Team");
          //Randomly partition is being selected.
 
          //CASE-2
