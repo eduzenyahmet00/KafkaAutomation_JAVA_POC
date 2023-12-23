@@ -10,7 +10,7 @@ public class SendMessageToTopic {
 
    public static void main(String[] args) {
 
-      for (int i = 1; i <=5; i++) { //to send message many times
+      for (int i = 1; i <=10; i++) { //to send message many times
 
 
          //String brokers = "glider-01.srvs.cloudkafka.com:9094,glider-02.srvs.cloudkafka.com:9094"; //Multiple Servers
@@ -47,7 +47,7 @@ public class SendMessageToTopic {
          //ProducerRecord<String,String> record = new ProducerRecord<String, String>(topic2, "key", "value");
          //CASE-1
          //ProducerRecord<String, String> message = new ProducerRecord<String, String>(topic, "Message-" + i, "Hey Neva-Eureka QA Team");
-         ProducerRecord<String, String> message = new ProducerRecord<>(topic, "austin", "Hey Austin Team");
+         ProducerRecord<String, String> message = new ProducerRecord<>(topic, "austin", "Hey ESAD");
          //Randomly partition is being selected.
 
          //CASE-2

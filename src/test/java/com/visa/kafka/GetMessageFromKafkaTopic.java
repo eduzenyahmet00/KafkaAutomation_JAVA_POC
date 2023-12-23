@@ -61,7 +61,7 @@ public class GetMessageFromKafkaTopic {
 //		// Poll for messages
         boolean flag = true;
         while(flag) {
-            String actualMsg = "Hey Austin Team";
+            String actualMsg = "Hey ESAD";
             ConsumerRecords<String,String> records = consumer.poll(100); // Return N number of records
             for(ConsumerRecord<String,String> each:records) {
                 String msg = each.value();
